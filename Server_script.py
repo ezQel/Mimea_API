@@ -75,13 +75,13 @@ def do_inference_on_image(IMAGE_NAME):
     # Load the Tensorflow model into memory.
     detection_graph = tf.Graph()
     with detection_graph.as_default():
-        od_graph_def = tf.GraphDef()
-        with tf.gfile.GFile(PATH_TO_CKPT, 'rb') as fid:
+        od_graph_def = tf.compat.v1.GraphDef()
+        with tf.io.gfile.GFile(PATH_TO_CKPT, 'rb') as fid:
             serialized_graph = fid.read()
             od_graph_def.ParseFromString(serialized_graph)
             tf.import_graph_def(od_graph_def, name='')
 
-        sess = tf.Session(graph=detection_graph)
+        sess = tf.compat.v1.Session(graph=detection_graph)
 
     # Define input and output tensors (i.e. data) for the object detection classifier
 
@@ -165,8 +165,8 @@ class SpeciesSchema(ma.Schema):
         fields = ('id', 'latin_name', 'english_name', 'description')
 
 # Init Schema
-specie_schema = SpeciesSchema(strict=True)
-species_schema = SpeciesSchema(many=True, strict=True)
+specie_schema = SpeciesSchema()
+species_schema = SpeciesSchema(many=True)
 
 
 # Add a Species to sqlite DB
