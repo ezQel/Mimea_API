@@ -189,7 +189,7 @@ def add_species():
 def upload_file():
     return '''<html>
    <body>
-      <form action = "/uploader" method = "POST" 
+      <form action = "/upload" method = "POST" 
          enctype = "multipart/form-data">
          <input type = "file" name = "file" />
          <input type = "submit"/>
@@ -200,7 +200,7 @@ def upload_file():
 
 
 # image upload handler
-@app.route('/uploader', methods=['POST'])
+@app.route('/upload', methods=['POST'])
 def upload_files():
     if request.method == 'POST':
         f = request.files['file']
