@@ -1,5 +1,5 @@
 
-#######@author: Ezekiel Kalama SIT/0002/2015######
+#######@author: Ezekiel Kalama ######
 
 1. Tensorflow -- pip install tensorflow
 2. Numpy -- pip install numpy
