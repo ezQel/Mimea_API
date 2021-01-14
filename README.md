@@ -12,7 +12,7 @@ This program utilizes [tensorflow object detection](https://github.com/tensorflo
 
 1. Follow the intructions [here](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html) to install [Tensorflow Object detection API](https://github.com/tensorflow/models/tree/master/research/object_detection)
 
-1. Run [server_script.py](../../server_script.py) `python server_script.py`
+1. Run server_script.py `python server_script.py`
 
 1. The server will run locally at `localhost:500`. Test the program by uploading an image of a leaf from the web page at `localhost:5000`
 
