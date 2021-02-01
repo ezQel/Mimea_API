@@ -1,5 +1,5 @@
-# Mimea_Server (A plant Identification System.)
-This program utilizes [tensorflow object detection](https://github.com/tensorflow/models/tree/master/research/object_detection) to recognize plant species from an image of their leaves. It consists of a flask server that allows a user to upload an image of a plant and returns the details of the plant in json.
+# Mimea_Server (A plant Species Identification Program.)
+This program utilizes [tensorflow object detection](https://github.com/tensorflow/models/tree/master/research/object_detection) to recognize the species of plants when provided with an image of their leaves. It consists of a flask server that allows a user to POST an image of a plant and returns the details of the plant in json.
 
 ## Getting Started
 1. Install the following python packages:
