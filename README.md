@@ -2,7 +2,7 @@
 This program utilizes [tensorflow object detection](https://github.com/tensorflow/models/tree/master/research/object_detection) to recognize the species of plants when provided with an image of their leaves. It consists of a flask server that allows a user to POST an image of a plant and returns the details of the plant in json.
 
 ## Getting Started
-1. Install the following python packages using `pip -r requirements.txt`:
+1. Install the following python packages using `pip install -r requirements.txt`:
     * Tensorflow 2.4.0
     * Opencv-python 4.5.1.48
     * flask 1.1.2
